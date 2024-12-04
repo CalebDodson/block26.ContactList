@@ -1,36 +1,76 @@
-#root {
-  max-width: 1280px;
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #2C3E50;
+}
+
+.fullTable {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-spacing: 8px;
+  background-color: #ECF0F1;
+  color: #2C3E50;
+  border-radius: 20px;
+  box-shadow: 0 0 20px black;
+  padding: 5px 20px 20px 20px;
+}
+
+.selectedTable {
+  background-color: #ECF0F1;
+  border-radius: 20px;
+  box-shadow: 0 0 20px black;
+  padding: 5px 20px 20px 20px;
+}
+
+.selectedTable tbody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#returnBtn {
+  display: block;
   margin: 0 auto;
-  padding: 2rem;
+  background-color: #ECF0F1;
+  color: #2C3E50;
+  font-size: 20px;
+  margin-top: 20px;
+  box-shadow: 0 0 10px black;
+}
+
+#returnBtn:hover {
+  background-color: #2C3E50;
+  color: #ECF0F1;
+  border-color: #ECF0F1;
+  transition: ease-in-out .1s;
+  box-shadow: 0 0 2px black;
+}
+
+th {
+  font-size: 48px;
+  padding-bottom: 10px;
+}
+
+td {
+  font-size: 20px;
+}
+
+td, th {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.subheader {
   text-align: center;
+  font-size: 24px;
+  font-weight: bold;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.fullListRow:hover {
+  cursor: pointer;
 }
 
 .card {
